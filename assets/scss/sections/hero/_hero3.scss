@@ -1,0 +1,166 @@
+.banner3-section{
+    background: #0B0C12;
+    position: relative;
+    .overlay{
+        background: url(../images/bg/grain-texture.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 100vh;
+        position: relative;
+        z-index: 11;
+        padding-top: 8%;
+    }
+ .top-shape{
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+ }   
+}
+
+.bottom-shape{
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    &2{
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+        position: absolute;
+        text-align: center;
+        z-index: 2;
+    }
+}
+
+.banner3-content{
+    h5 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 167%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    h1{
+        max-width: 978px;
+        margin: auto;
+        margin-bottom: 23px;
+    }
+    .price-text{
+        text-align: center;
+        margin-bottom: 31px;
+    }
+    .banner3-btn{
+        max-width: 270px;
+        width: 100%;
+        height: 60px;
+        background: linear-gradient(90deg, #E05FBB 0%, #4250F4 100%);
+        border-radius: 50px;
+        position: relative;
+        z-index: 4;
+    }
+}
+
+.banner-three-timer{
+    max-width: 520px;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li{
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 125%;
+            text-align: center;
+            color: #FFFFFF;
+            span{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.progress-section{
+    max-width: 770px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1.5%;
+    margin-top: 2%;
+    .progress-top-text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            margin-bottom: 11px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 30px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+    .progress-bar-container{
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px dashed rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 8px;
+        .progress-bar-inner{
+            background: #4250F4;
+            border-radius: 12px;
+            padding: 4px 6px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 23%;
+            span{
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 125%;
+                text-align: right;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.banner3-social{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    z-index: 3;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px;
+        list-style: none;
+        max-width: 520px;
+        margin: auto;
+        li {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
