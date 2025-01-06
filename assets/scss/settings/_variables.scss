@@ -6,8 +6,11 @@ $inter: "Inter", sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 $outfit: 'Outfit', sans-serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
-$orbitron: 'Orbitron', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+$orbitron: 'Orbitron', serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
+$kufam: 'Kufam', serif;
 
 //font family functions
 @function fontfamily($key) {
@@ -16,6 +19,7 @@ $orbitron: 'Orbitron', sans-serif;
       inter: $inter,
       outfit: $outfit,
       orbitron: $orbitron,
+      kufam: $kufam,
     );
     
     @return map-get($fontFamily, $key);

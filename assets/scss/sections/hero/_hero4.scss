@@ -1,0 +1,30 @@
+.container-v4{
+    max-width: 1720px;
+    padding: 0px 20px;
+    margin: auto;
+}
+.banner4{
+    &-section{
+        background: url(../images/bg/banner1-bg.png);
+    }
+    &-inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-left{
+        max-width: 60%;
+    }
+    &-right{
+        width: 40%;
+    }
+    &-text{
+        h1{
+            color: #FFF;
+            font-size: 60px;
+            font-weight: 900;
+            line-height: 150%;
+            text-transform: uppercase;
+        }
+    }
+}
