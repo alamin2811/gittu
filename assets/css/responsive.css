@@ -14,7 +14,7 @@
   .banner-section .overlay2 {
     padding-bottom: 150px;
   }
-  .banner3-content h1 {
+  .banner1-content h1 {
     font-size: 55px;
     max-width: 660px;
     margin: auto;
@@ -26,7 +26,7 @@
   .banner-three-timer ul li {
     font-size: 30px;
   }
-  .banner3-section .overlay {
+  .banner1-section .overlay {
     padding-top: 12%;
   }
 }
@@ -60,7 +60,7 @@
   .main-content-right {
     width: 100%;
   }
-  .banner3-section .overlay {
+  .banner1-section .overlay {
     padding-top: 16%;
   }
 }
@@ -93,14 +93,14 @@
   .banner2-content h2 {
     max-width: 390px;
   }
-  .banner3-section .overlay {
+  .banner1-section .overlay {
     padding-top: 150px;
     min-height: auto;
   }
-  .banner3-social {
+  .banner1-social {
     bottom: 20px;
   }
-  .banner3-content h1 {
+  .banner1-content h1 {
     font-size: 40px;
     line-height: 150%;
   }
@@ -137,24 +137,24 @@
   .banner-three-timer ul li {
     font-size: 24px;
   }
-  .banner3-content h1 {
+  .banner1-content h1 {
     font-size: 36px;
   }
-  .banner3-content h5 {
+  .banner1-content h5 {
     margin-bottom: 20px;
   }
-  .banner3-content .price-text {
+  .banner1-content .price-text {
     margin-top: 20px;
   }
   .progress-section .progress-top-text {
     flex-wrap: wrap;
   }
-  .banner3-social {
+  .banner1-social {
     position: relative;
     padding-top: 50px;
     padding-bottom: 0px;
   }
-  .banner3-section .overlay {
+  .banner1-section .overlay {
     height: auto;
   }
 }
@@ -165,7 +165,7 @@
   .main-content-right {
     padding: 20px;
   }
-  .banner3-social ul li {
+  .banner1-social ul li {
     height: 36px;
     padding: 10px;
     width: 36px;

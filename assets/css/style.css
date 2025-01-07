@@ -28928,11 +28928,11 @@ CSS table of content
   color: #FFFFFF;
 }
 
-.banner3-section {
+.banner1-section {
   background: #0B0C12;
   position: relative;
 }
-.banner3-section .overlay {
+.banner1-section .overlay {
   background: url(../images/bg/grain-texture.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -28942,7 +28942,7 @@ CSS table of content
   z-index: 11;
   padding-top: 8%;
 }
-.banner3-section .top-shape {
+.banner1-section .top-shape {
   width: 100%;
   left: 0px;
   top: 0px;
@@ -28968,23 +28968,23 @@ CSS table of content
   z-index: 2;
 }
 
-.banner3-content h5 {
+.banner1-content h5 {
   font-weight: 600;
   font-size: 18px;
   line-height: 167%;
   text-align: center;
   color: #FFFFFF;
 }
-.banner3-content h1 {
+.banner1-content h1 {
   max-width: 978px;
   margin: auto;
   margin-bottom: 23px;
 }
-.banner3-content .price-text {
+.banner1-content .price-text {
   text-align: center;
   margin-bottom: 31px;
 }
-.banner3-content .banner3-btn {
+.banner1-content .banner1-btn {
   max-width: 270px;
   width: 100%;
   height: 60px;
@@ -29062,7 +29062,7 @@ CSS table of content
   color: #FFFFFF;
 }
 
-.banner3-social {
+.banner1-social {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -29072,7 +29072,7 @@ CSS table of content
   padding-bottom: 2%;
   z-index: 3;
 }
-.banner3-social ul {
+.banner1-social ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29081,7 +29081,7 @@ CSS table of content
   max-width: 520px;
   margin: auto;
 }
-.banner3-social ul li {
+.banner1-social ul li {
   background: rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -29097,6 +29097,182 @@ CSS table of content
   max-width: 1720px;
   padding: 0px 20px;
   margin: auto;
+}
+
+.banner4-section {
+  background: url(../images/bg/v4-bg-min.jpg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.banner4-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.banner4-left {
+  max-width: 60%;
+}
+.banner4-right {
+  background: url(../images/bg/right-bg4_img.jpg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 43.5%;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.banner4-right .banner4-right-bottom {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 70px 20px;
+  width: 100%;
+}
+.banner4-right .banner4-right-bottom .banner4-right-bottom-content {
+  max-width: 645px;
+  text-align: right;
+  margin: auto;
+}
+.banner4-right .banner4-right-bottom .banner4-right-bottom-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.banner4-right .banner4-right-bottom .timer-content {
+  max-width: 480px;
+  margin-left: auto;
+  margin-bottom: 45px;
+}
+.banner4-right .banner4-right-bottom .timer-content h5 {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 166.667%;
+  margin-bottom: 25px;
+}
+.banner4-right .banner4-right-bottom .timer-content ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner4-right .banner4-right-bottom .timer-content ul li {
+  color: #FFF;
+  font-family: Orbitron;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 125%;
+  position: relative;
+}
+.banner4-right .banner4-right-bottom .timer-content ul li::after {
+  content: ":";
+  position: absolute;
+  right: -35px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.banner4-right .banner4-right-bottom .timer-content ul li span {
+  font-size: 24px;
+}
+.banner4-right .banner4-right-bottom .timer-content ul li:nth-last-child(1)::after {
+  display: none;
+}
+.banner4-right .banner4-right-bottom .v4-social ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.banner4-right .banner4-right-bottom .v4-social ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.banner4-text {
+  max-width: 790px;
+  width: 100%;
+}
+.banner4-text h1 {
+  color: #FFF;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin-bottom: 3%;
+}
+.banner4-text p {
+  font-size: 18px;
+  margin-bottom: 6%;
+}
+.banner4-text h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 187.5%;
+}
+
+.progress-section-v4 {
+  max-width: 770px;
+  width: 100%;
+  margin-right: auto;
+  margin-bottom: 6%;
+}
+.progress-section-v4 .progress-top-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.progress-section-v4 .progress-top-text p {
+  margin-bottom: 11px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.progress-section-v4 .progress-bar-container {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 8px;
+}
+.progress-section-v4 .progress-bar-container .progress-bar-inner {
+  background: #1DFF96;
+  border-radius: 12px;
+  padding: 4px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 23%;
+}
+.progress-section-v4 .progress-bar-container .progress-bar-inner span {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 125%;
+  text-align: right;
+  color: #111;
+}
+
+.banner4-btn {
+  border-radius: 30px;
+  background: linear-gradient(90deg, #1DFF96 0%, #BCFF7B 100%);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  height: 60px;
+  width: 270px;
+  margin-top: 5%;
 }
 
 /*--------------------------------

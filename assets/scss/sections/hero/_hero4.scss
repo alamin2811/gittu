@@ -5,26 +5,182 @@
 }
 .banner4{
     &-section{
-        background: url(../images/bg/banner1-bg.png);
+        background: url(../images/bg/v4-bg-min.jpg);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
     }
     &-inner{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        min-height: 100vh;
     }
     &-left{
         max-width: 60%;
     }
     &-right{
-        width: 40%;
+        background: url(../images/bg/right-bg4_img.jpg);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 43.5%;
+        z-index: 1;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        .banner4-right-bottom{
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(10px);
+            padding: 70px 20px;
+            width: 100%;
+            .banner4-right-bottom-content{
+                max-width: 645px;
+                text-align: right;
+                margin: auto;
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+            .timer-content{
+                max-width: 480px;
+                margin-left: auto;
+                margin-bottom: 45px;
+                h5{
+                    color: #FFF;;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 166.667%;
+                    margin-bottom: 25px;
+                }
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    li{
+                        color: #FFF;
+                        font-family: Orbitron;
+                        font-size: 40px;
+                        font-weight: 900;
+                        line-height: 125%;
+                        position: relative;
+                        &::after{
+                            content: ':';
+                            position: absolute;
+                            right: -35px;
+                            color: rgba(255, 255, 255, 0.40);
+                        }
+                        span{
+                            font-size: 24px;
+                        }
+                        &:nth-last-child(1){
+                            &::after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .v4-social{
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 20px;
+                    li{
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 50%;
+                            background: rgba(255, 255, 255, 0.15);
+                            backdrop-filter: blur(10px);
+                        }
+                    }
+                }
+            }
+        }
     }
     &-text{
+        max-width: 790px;
+        width: 100%;
         h1{
             color: #FFF;
             font-size: 60px;
             font-weight: 900;
             line-height: 150%;
             text-transform: uppercase;
+            margin-bottom: 3%;
+        }
+        p{
+            font-size: 18px;
+            margin-bottom: 6%;
+        }
+        h5{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 187.5%;
         }
     }
+}
+
+.progress-section-v4{
+    max-width: 770px;
+    width: 100%;
+    margin-right: auto;
+    margin-bottom: 6%;
+    
+    .progress-top-text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            margin-bottom: 11px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 30px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+    .progress-bar-container{
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px dashed rgba(255, 255, 255, 0.2);        
+        border-radius: 20px;        
+        padding: 8px;
+        .progress-bar-inner{
+            background: #1DFF96;
+            border-radius: 12px;
+            padding: 4px 6px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 23%;
+            span{
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 125%;
+                text-align: right;
+                color: #111;
+            }
+        }
+    }
+}
+
+.banner4-btn{
+    border-radius: 30px;
+    background: linear-gradient(90deg, #1DFF96 0%, #BCFF7B 100%);
+    backdrop-filter: blur(10px);
+    height: 60px;
+    width: 270px;
+    margin-top: 5%;
 }
