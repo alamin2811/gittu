@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gittu - Home Four</title>
+
+    <!-- favicon included here -->
+    <link rel="shortcut icon" href="./assets/images/logo/fevicon.svg" type="image/x-icon">
+
+    <!-- apple touch icon included here -->
+    <link rel="apple-touch-icon" href="./assets/images/logo/fevicon.svg">
+
+    <!-- All css files included here -->
+    <!-- Bootstrap  v5.2.1 css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- slick slider css -->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <!-- Nice Select css -->
+    <link rel="stylesheet" href="./assets/css/niceCountryInput.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <section class="header-section">
+        <div class="container">
+            <div class="header-inner">
+                <a href="./index.html" class="logo"><img src="./assets/images/logo/logo.svg" alt="logo"></a>
+                <div class="header-right v4">
+                    <ul>
+                        <li><a href="#"><img src="./assets/images/icon/telegram.svg" alt="icon"></a></li>
+                        <li><a href="#"><img src="./assets/images/icon/discord.svg" alt="icon"></a></li>
+                        <li><a href="#"><img src="./assets/images/icon/twitter.svg" alt="icon"></a></li>
+                    </ul>
+                    <button class="v4" type="button" data-bs-toggle="modal" data-bs-target="#connectModal">Connect
+                        Wallet</button>
+                    <a href="#"><img src="./assets/images/icon/menu.svg" alt="icon"></a>
+                </div>
+                <div class="mobile-menu">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                        fdprocessedid="7fbgmc">
+                        <span class="iconify" data-icon="fa6-solid:bars"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end mobile-menu-body" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a href="./index.html" class="logo"><img src="./assets/images/logo/logo.svg"
+                                    alt="logo"></a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><span
+                                    class="iconify" data-icon="material-symbols:close-rounded"></span></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <button class="connect-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#connectModal">Connect Wallet</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Header Section End -->
+
+    <!-- banner section start -->
+    <section class="banner4-section">
+        <div class="container">
+            <div class="banner4-content">
+                <h1 class="text-center">WEB3.0 TOKEN</h1>
+                <p class="text-center">Buy tokens now and reap the benefits of the blockchain revolution!</p>
+                <ul class="timer-v4 timer_1">
+                    <li class="days">08<span>d</span></li>
+                    <li class="hours">23<span>h</span></li>
+                    <li class="minutes">49<span>m</span></li>
+                    <li class="seconds">03<span>s</span></li>
+                </ul>
+                <div class="banner4-progress">
+                    <div id="container"></div>
+                </div>
+                <div class="banner4-statistics">
+                    <h6 class="outfit uppercase">Raised <br> <span>256933.25</span></h6>
+                    <h6 class="outfit uppercase">Goal <br> <span>90,000,000</span></h6>
+                </div>
+
+                <div class="token-content v4">
+                    <div class="token-left">
+                        <ul>
+                            <li><a href="#"><img src="./assets/images/token/token_bnb.svg" alt="token"></a></li>
+                            <li><a href="#"><img src="./assets/images/token/token_usdt.svg" alt="token"></a></li>
+                        </ul>
+                    </div>
+                    <div class="token-center">
+                        <h3 class="text-center kufam uppercase">1 uigigs = 0.050 USDT</h3>
+                    </div>
+                    <div class="token-right">
+                        <a href="#" class="buy-token-btn">
+                            <span>Buy on eth</span>
+                            <img src="./assets/images/token/eth_logo.png" alt="token">
+                        </a>
+                    </div>
+                </div>
+
+                <form action="/">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="gittu-input v3">
+                                <label>Pay token  (BNB)</label>
+                                <input type="text" placeholder="0">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="gittu-input v3">
+                                <label>Get token  (Uigigs)</label>
+                                <input type="text" placeholder="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="buy-btn v4">Buy Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- banner section end -->
+
+
+    <!-- connect modal -->
+    <div class="connect-modal">
+        <!-- Modal -->
+        <div class="modal fade" id="connectModal" tabindex="-1" aria-labelledby="connectModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 orbitron" id="connectModalLabel">Connect Wallet</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span
+                                class="iconify" data-icon="material-symbols:close-rounded"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Choose how you want to connect. There are several wallet providers.</p>
+                        <ul class="wallet-list">
+                            <li class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a href="#"><img
+                                        src="./assets/images/wallet/metamask.svg" alt="metamask"><span
+                                        class="wt-700 kanit">MetaMask</span></a></li>
+                            <li class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a href="#"><img
+                                        src="./assets/images/wallet/formatic.png" alt="formatic"><span
+                                        class="wt-700 kanit">Formatic</span></a></li>
+                            <li class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a href="#"><img
+                                        src="./assets/images/wallet/trust-wallet.svg" alt="trust-wallet"><span
+                                        class="wt-700 kanit">Trust Wallet</span></a></li>
+                            <li class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a href="#"><img
+                                        src="./assets/images/wallet/wallet-connect.svg" alt="wallet-connect"><span
+                                        class="wt-700 kanit">WalletConnect</span></a></li>
+                            <li class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a href="#"><img
+                                        src="./assets/images/wallet/phantom.png" alt="phantom"><span
+                                        class="wt-700 kanit">Phantom</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- All javascript files included here -->
+    <!-- jQuery v3.6.1 js -->
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <!-- Bootstrap  v5.2.1 js -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Iconify v3.0.0 js -->
+    <script src="./assets/js/iconify.min.js"></script>
+    <!-- modernizr js -->
+    <script src="./assets/js/modernizr.js"></script>
+    <!-- slick slider js -->
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- nice Select js -->
+    <script src="./assets/js/niceCountryInput.js"></script>
+    <!-- Swap Token js -->
+    <script src="./assets/js/swap-token.js"></script>
+    <!-- Time Counter js -->
+    <script src="./assets/js/time-counter.js"></script>
+    <!-- progressbar js -->
+    <script src="./assets/js/progressbar.js"></script>
+    <!-- Metamask Js -->
+    <script src="./assets/js/metamask.js"></script>
+    <script src="./assets/js/metamaskhandler.js"></script>
+    <script src="./assets/js/web3.min.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

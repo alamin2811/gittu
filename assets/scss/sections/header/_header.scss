@@ -26,7 +26,8 @@
     align-items: center;
     justify-content: flex-end;
     width: 40%;
-    &.v3{
+    &.v3,
+    &.v4{
         width: 70%;
         ul{
             display: flex;
@@ -76,7 +77,17 @@
         &.v3{
             color: #111;
             background: #07E6F5;
-            backdrop-filter: blur(10px);
+            margin-right: 20px;
+        }
+        &.v4{
+            color: #111;
+            background: #FCD930;
+            margin-right: 20px;
+        }
+        &.v5{
+            color: #111;
+            border-radius: 25px;
+            background: linear-gradient(90deg, #1DFF96 0%, #BCFF7B 100%);
             margin-right: 20px;
         }
     }
