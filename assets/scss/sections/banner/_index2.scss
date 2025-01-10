@@ -1,11 +1,11 @@
-.container-v4{
+.container-home2{
     max-width: 1720px;
     padding: 0px 20px;
     margin: auto;
 }
-.banner4{
+.banner2{
     &-section{
-        background: url(../images/bg/v4-bg-min.jpg);
+        background: url(../images/bg/v2-bg-min.jpg);
         background-position: left center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -34,12 +34,12 @@
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
-        .banner4-right-bottom{
+        .banner2-right-bottom{
             background: rgba(255, 255, 255, 0.10);
             backdrop-filter: blur(10px);
             padding: 70px 20px;
             width: 100%;
-            .banner4-right-bottom-content{
+            .banner2-right-bottom-content{
                 max-width: 645px;
                 text-align: right;
                 margin: auto;
@@ -88,7 +88,7 @@
                     }
                 }
             }
-            .v4-social{
+            .v2-social{
                 ul{
                     display: flex;
                     align-items: center;
@@ -133,7 +133,7 @@
     }
 }
 
-.progress-section-v4{
+.progress-section-v2{
     max-width: 770px;
     width: 100%;
     margin-right: auto;
@@ -176,7 +176,7 @@
     }
 }
 
-.banner4-btn{
+.banner2-btn{
     border-radius: 30px;
     background: linear-gradient(90deg, #1DFF96 0%, #BCFF7B 100%);
     backdrop-filter: blur(10px);

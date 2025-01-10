@@ -1,17 +1,17 @@
 @media screen and (max-width: 1199px) {
-  .banner-left h1 {
+  .banner9-left h1 {
     font-size: 52px;
   }
-  .banner-left p {
+  .banner9-left p {
     margin-bottom: 20px;
   }
-  .banner-left button {
+  .banner9-left button {
     margin-bottom: 20px;
   }
   h5 {
     font-size: 16px;
   }
-  .banner-section .overlay2 {
+  .banner9-section .overlay2 {
     padding-bottom: 150px;
   }
   .banner1-content h1 {
@@ -20,10 +20,10 @@
     margin: auto;
     margin-bottom: 23px;
   }
-  .banner-three-timer {
+  .banner9-three-timer {
     max-width: 400px;
   }
-  .banner-three-timer ul li {
+  .banner9-three-timer ul li {
     font-size: 30px;
   }
   .banner1-section .overlay {
@@ -31,24 +31,24 @@
   }
 }
 @media screen and (max-width: 991px) {
-  .banner-section .overlay2 {
+  .banner9-section .overlay2 {
     padding-top: 180px;
   }
-  .banner-left {
+  .banner9-left {
     max-width: 430px;
     padding-top: 0px;
     margin: auto;
     text-align: center;
   }
-  .banner-right {
+  .banner9-right {
     margin-top: 100px;
     padding: 0px 70px;
   }
-  .header-section.header1 .header-right {
+  .header-section.header9 .header-right {
     width: 70%;
   }
   /*--banner 2 --*/
-  .banner2-content h1 {
+  .banner10-content h1 {
     font-size: 55px;
   }
   .main-content {
@@ -65,11 +65,11 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .banner-right {
+  .banner9-right {
     padding: 40px;
     margin-top: 60px;
   }
-  .banner-section .overlay2 {
+  .banner9-section .overlay2 {
     padding-top: 150px;
   }
   .card-shape {
@@ -87,10 +87,10 @@
   .card-info ul li {
     flex-wrap: wrap;
   }
-  .banner2-content h1 {
+  .banner10-content h1 {
     font-size: 40px;
   }
-  .banner2-content h2 {
+  .banner10-content h2 {
     max-width: 390px;
   }
   .banner1-section .overlay {
@@ -119,7 +119,7 @@
   }
 }
 @media screen and (max-width: 575px) {
-  .banner-right {
+  .banner9-right {
     padding: 10px;
   }
   .card-content, .card-content2 {
@@ -128,13 +128,13 @@
   .main-content-progress-section h5 {
     flex-wrap: wrap;
   }
-  .banner-left h1 {
+  .banner9-left h1 {
     font-size: 40px;
   }
   .banner1-timer ul li {
     font-size: 30px;
   }
-  .banner-three-timer ul li {
+  .banner9-three-timer ul li {
     font-size: 24px;
   }
   .banner1-content h1 {
@@ -170,7 +170,7 @@
     padding: 10px;
     width: 36px;
   }
-  .banner-card .card-content {
+  .banner9-card .card-content {
     padding: 20px 20px 30px 20px;
   }
   .modal-content {

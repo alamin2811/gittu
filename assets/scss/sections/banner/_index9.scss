@@ -1,9 +1,9 @@
-.banner-section{
+.banner9-section{
     background: #0E1117;
     min-height: 100vh;
     overflow-x: hidden;
     .overlay{
-        background: url(../images/bg/banner1-bg.png);
+        background: url(../images/bg/banner9-bg.png);
         min-height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
@@ -17,7 +17,7 @@
     }
 }
 
-.banner-left {
+.banner9-left {
     padding-top: 50px;
     h1 {
         font-weight: 700;
@@ -68,7 +68,7 @@
     }
 }
 
-.banner-card{
+.banner9-card{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     border-radius: 20px;
@@ -158,7 +158,7 @@
     align-items: center;
     justify-content: flex-end;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 15px;
     color: #111111;
     width: 23%;
@@ -270,7 +270,7 @@
     }
 }
 
-.banner-footer{
+.banner9-footer{
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px); 
     display: flex;

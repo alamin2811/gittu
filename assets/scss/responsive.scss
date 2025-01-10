@@ -17,7 +17,7 @@
 }
 
 @include breakpointMaxWidth(1199px) {
-    .banner-left {
+    .banner9-left {
         h1{
             font-size: 52px;
         }
@@ -31,7 +31,7 @@
     h5{
         font-size: 16px;
     }
-    .banner-section {
+    .banner9-section {
         .overlay2{
             padding-bottom: 150px;
         }
@@ -45,7 +45,7 @@
             margin-bottom: 23px;
         }
     }
-    .banner-three-timer{
+    .banner9-three-timer{
         max-width: 400px;
         ul{
             li{
@@ -63,23 +63,23 @@
 
 
 @include breakpointMaxWidth(991px){
-    .banner-section {
+    .banner9-section {
         .overlay2{
             padding-top: 180px;
         }
     }
-    .banner-left{
+    .banner9-left{
         max-width: 430px;
         padding-top: 0px;
         margin: auto;
         text-align: center;
     }
-    .banner-right{
+    .banner9-right{
         margin-top: 100px;
         padding: 0px 70px
     }
     .header-section{
-        &.header1{
+        &.header9{
             .header-right{
                 width: 70%;
             }
@@ -87,7 +87,7 @@
     }
 
     /*--banner 2 --*/
-    .banner2-content {
+    .banner10-content {
         h1{
             font-size: 55px;
         }
@@ -109,11 +109,11 @@
 }
 
 @include breakpointMaxWidth(768px){
-    .banner-right{
+    .banner9-right{
         padding: 40px;
         margin-top: 60px;
     }
-    .banner-section {
+    .banner9-section {
         .overlay2{
             padding-top: 150px;
         }
@@ -139,7 +139,7 @@
             }
         }
     }
-    .banner2-content {
+    .banner10-content {
         h1{
             font-size: 40px;
         }
@@ -183,7 +183,7 @@
 
 
 @include breakpointMaxWidth(575px){
-    .banner-right{
+    .banner9-right{
         padding: 10px;
     }
     .card-content, .card-content2{
@@ -195,7 +195,7 @@
         }
     }
 
-    .banner-left {
+    .banner9-left {
         h1{
             font-size: 40px;
         }
@@ -210,7 +210,7 @@
     }
 
 
-    .banner-three-timer {
+    .banner9-three-timer {
         ul{
             li{
                 font-size: 24px;
@@ -262,7 +262,7 @@
         width: 36px;
     }
 
-    .banner-card {
+    .banner9-card {
         .card-content{
             padding: 20px 20px 30px 20px;
         }
