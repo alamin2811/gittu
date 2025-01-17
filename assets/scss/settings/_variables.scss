@@ -12,6 +12,9 @@ $orbitron: 'Orbitron', serif;
 @import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
 $kufam: 'Kufam', serif;
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$babesNenu: 'Bebas Neue', serif;
+
 //font family functions
 @function fontfamily($key) {
     //font family map
@@ -20,6 +23,7 @@ $kufam: 'Kufam', serif;
       outfit: $outfit,
       orbitron: $orbitron,
       kufam: $kufam,
+      babesNenu: $babesNenu,
     );
     
     @return map-get($fontFamily, $key);

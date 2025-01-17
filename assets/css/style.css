@@ -25,6 +25,7 @@ CSS table of content
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 /*--------------------------------
 02. Base style
 --------------------------------*/
@@ -363,6 +364,60 @@ img {
   line-height: 100%;
   width: 100%;
   height: 60px;
+}
+
+.token-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+.token-content ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.token-content .token-left ul {
+  justify-content: flex-start;
+  gap: 20px;
+}
+.token-content .token-left ul li a {
+  border-radius: 60px;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  height: 60px;
+  width: 60px;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.token-content .token-left ul li a:hover {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+.token-content .token-right .buy-token-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  height: 60px;
+  width: 180px;
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 162.5%;
+  text-transform: uppercase;
+  gap: 9px;
 }
 
 /*------------------------------------------------------------------------------------
@@ -29307,6 +29362,146 @@ CSS table of content
   min-height: 100vh;
   padding-top: 8%;
   padding-bottom: 3%;
+}
+
+.banner5-content {
+  max-width: 742px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+.banner5-content h1 {
+  color: #FFF;
+  font-family: "Bebas Neue";
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px; /* 100% */
+}
+.banner5-content p {
+  font-size: 18px;
+}
+
+.banner5-content-inner {
+  max-width: 670px;
+  margin: auto;
+}
+
+.banner5-timer h6 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.timer-v5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.timer-v5 li {
+  color: #FFF;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  position: relative;
+  background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.2) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+.timer-v5 li span {
+  font-size: 50px;
+}
+.timer-v5 li::after {
+  content: ":";
+  position: absolute;
+  right: -25px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.timer-v5 li:nth-last-child(1)::after {
+  display: none;
+}
+
+.buy-btn {
+  margin-top: 3%;
+}
+.buy-btn.v5 {
+  color: #111;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 162.5%;
+  text-transform: uppercase;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #1DFF96 0%, #BCFF7B 100%);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+}
+
+.banner-bottom-shape.v5 {
+  background: rgba(255, 255, 255, 0.15);
+  height: 80px;
+  width: 110%;
+  position: fixed;
+  z-index: 0;
+  transform: rotate(6deg);
+  left: -5%;
+  bottom: 10%;
+}
+
+.banner-bottom-scrollar {
+  background: linear-gradient(90deg, #1DFF96 0%, #BCFF7B 100%);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  width: 110%;
+  position: fixed;
+  z-index: 1;
+  transform: rotate(-6deg);
+  right: -5%;
+  bottom: 10%;
+}
+.banner-bottom-scrollar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  overflow: hidden;
+}
+.banner-bottom-scrollar-inner ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.banner-bottom-scrollar-inner ul li {
+  color: #111;
+  font-family: "Bebas Neue";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 
 .banner9-section {
