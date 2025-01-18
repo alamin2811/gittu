@@ -27,7 +27,9 @@
     justify-content: flex-end;
     width: 40%;
     &.v3,
-    &.v4{
+    &.v4,
+    &.v6,
+    &.v9{
         width: 70%;
         ul{
             display: flex;
@@ -90,6 +92,15 @@
             background: linear-gradient(90deg, #1DFF96 0%, #BCFF7B 100%);
             margin-right: 20px;
         }
+        &.v6{
+            color: #111;
+            border-radius: 25px;
+            background: linear-gradient(90deg, #1DFF96 0%, #BCFF7B 100%);
+            margin-right: 20px;
+        }
+        &.v9{
+            margin-right: 20px;
+        }
     }
     
 }
@@ -141,5 +152,14 @@
         padding: 0px;
         margin: 0px;
         margin-right: 40px;
+    }
+}
+
+.menu-btn {
+    &.v7{
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        background: rgba(255, 255, 255, 0.10);
+        height: 50px;
+        width: 50px;
     }
 }

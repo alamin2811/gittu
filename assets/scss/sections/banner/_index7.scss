@@ -1,0 +1,120 @@
+.banner7-section{
+    background: url(../images/bg/bg-7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+
+}
+.banner7-inner{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .banner7-left{
+        width: 60%;
+    }
+    .banner7-right{
+        width: 40%;
+    }
+}
+
+.banner7-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 70px;
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.banner7-left-top-content{
+    padding-right: 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.10);
+    padding-bottom: 63px;
+    h1{
+        color: #FFF;
+        font-family: Kufam;
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 128.571%;
+        margin-bottom: 25px;
+        span{
+            background: linear-gradient(180deg, #FFF 0%, #1DFF96 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    p{
+        color: #FFF;
+        font-family: Outfit;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 166.667%;
+        max-width: 536px;
+    }
+}
+
+.banner7-right-top-content{
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 25px 0px 25px 30px;
+                transition: 0.3s;
+                img{
+                    transition: 0.3s;
+                }
+                span{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 20px;
+                    color: rgba(255, 255, 255, 0.80);                    ;
+                    font-family: Outfit;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 162.5%;
+                    transition: 0.3s;
+                    &.justify-end{
+                        justify-content: flex-end;
+                    }
+                    &.w-50{
+                        width: 50%;
+                    }
+                    &.w-45{
+                        width: 45%;
+                    }
+                }
+                strong{
+                    width: 5%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &:hover{
+                    span{
+                        color: #FFF;
+                    }
+                    img{
+                        filter: brightness(100%);
+                    }
+                }
+
+            }
+        }
+    }
+}
