@@ -72,7 +72,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 25px 0px 25px 30px;
+                padding: 25px 0px 26px 30px;
                 transition: 0.3s;
                 img{
                     transition: 0.3s;
@@ -116,5 +116,153 @@
 
             }
         }
+    }
+}
+
+.v7-progress-section{
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-left: none;
+    padding-right: 30px;
+    
+}
+.card-progress-section{
+    &.v7{
+        h5{
+            span{
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+        }
+        .card-progress-bar{
+            border-radius: 0;
+        }
+        .card-progress-inner{
+             border-radius: 0;
+             background: #1DFF96;
+             width: 42%;
+        }
+    }
+}
+.banner7-timer{
+    padding-left: 30px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.timer-v7{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+        color: #FFF;
+        text-align: center;
+        font-family: "Bebas Neue";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        position: relative;
+        background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.20) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        span{
+            font-size: 40px;
+        }
+        &::after{
+            content: ':';
+            position: absolute;
+            right: -25px;
+            bottom: 3px;
+            color: rgba(255, 255, 255, 0.40);
+            background: rgba(255, 255, 255, 0.40);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(255, 255, 255, 0.40);
+        }
+        &:nth-last-child(1){
+            &::after{
+                display: none;
+            }
+        }
+    }
+}
+.banner7-token-content{
+        padding: 10px 30px 30px 0px;
+        border-right: 1px solid rgba(255, 255, 255, 0.10);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+.banner7-token-detail{
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: auto;
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0px;
+        }
+    }
+}
+
+.buy-btn {
+    margin-top: 25px;
+    &.v7{
+        color: #111;
+        font-family: Outfit;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 162.5%;
+        text-transform: uppercase;
+        border-radius: 0px;
+        background: linear-gradient(90deg, #1DFF96 0%, #BCFF7B 100%);
+        backdrop-filter: blur(10px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 100%;
+    }
+}
+
+.banner7-bottom-left{
+    border-right: 1px solid rgba(255, 255, 255, 0.10);
+}
+.banner7-bottom-left-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;
+    gap: 50px;
+    padding: 30px 30px 30px 0px;
+    p{
+        max-width: 204px;
+    }
+}
+.banner7-bottom-right-content{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.banner7-bottom{
+    p{
+        color: #FFF;
+        font-family: Outfit;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 166.667%;
+        margin-bottom: 0;
     }
 }

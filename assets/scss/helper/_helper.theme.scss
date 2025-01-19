@@ -33,6 +33,11 @@
             border-radius: 10px;
         }
     }
+    &.v7{
+        input{
+            border-radius: 0;
+        }
+    }
 }
 
 .token-content {
@@ -101,7 +106,8 @@
                         border-radius: 10px;
                         &.active,
                         &:hover{
-                            border: 2px solid rgba(29, 255, 150, 0.50);                            ;
+                            border: 2px solid rgba(29, 255, 150, 0.50);
+                            background: rgba(255, 255, 255, 0.15);                         ;                            ;
                         }
                     }
                 }
@@ -116,6 +122,88 @@
                 justify-content: flex-start;
                 padding: 5px 20px;
                 position: relative;
+            }
+        }
+    }
+    &.v7{
+        .token-left {
+            ul{
+                li{
+                    a{
+                        border-radius: 0px;
+                        background: rgba(255, 255, 255, 0.05);
+                        backdrop-filter: none;
+                        &.active,
+                        &:hover{
+                            border: 2px solid rgba(29, 255, 150, 0.50);   
+                            background: rgba(255, 255, 255, 0.15);                         ;
+                        }
+                    }
+                }
+            }
+        }
+        .token-right {
+            .buy-token-btn{
+                border-radius: 0px;
+                border: 2px solid rgba(255, 255, 255, 0.15);
+                background: rgba(255, 255, 255, 0.05);
+                min-width: 220px;
+                justify-content: flex-start;
+                padding: 5px 20px;
+                position: relative;
+                backdrop-filter: none;
+            }
+        }
+    }
+
+    &.v8{
+        margin-top: 15px;
+        margin-bottom: 30px;
+        .token-left {
+            ul{
+                li{
+                    a{
+                        border-radius: 60px;
+                        background: transparent;
+                        backdrop-filter: none;
+                        position: relative;
+                        box-sizing: border-box;
+                        border: none;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 1px; right: 1px; bottom: 1px; left: 1px;
+                            z-index: -1; /* !importanté */
+                            border-radius: inherit; /* !importanté */
+                            background: #393B5A;
+                          }
+                        &.active,
+                        &:hover{   
+                            background: rgba(255, 255, 255, 0.15);
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                top: 0; right: 0; bottom: 0; left: 0;
+                                z-index: -1; /* !importanté */
+                                border-radius: inherit; /* !importanté */
+                                background: linear-gradient(to right, red, orange);
+                                background: linear-gradient(90deg, #3C38FF 0%, #8C45FF 33.33%, #FF36C7 68.23%, #FFA336 100%);
+                            }                         ;                         ;
+                        }
+                    }
+                }
+            }
+        }
+        .token-right {
+            .buy-token-btn{
+                border-radius: 60px;
+                border: 2px solid rgba(255, 255, 255, 0.15);
+                background: rgba(255, 255, 255, 0.05);
+                min-width: 220px;
+                justify-content: flex-start;
+                padding: 5px 20px;
+                position: relative;
+                backdrop-filter: none;
             }
         }
     }

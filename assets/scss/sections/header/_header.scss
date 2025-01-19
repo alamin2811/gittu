@@ -29,6 +29,7 @@
     &.v3,
     &.v4,
     &.v6,
+    &.v8,
     &.v9{
         width: 70%;
         ul{
@@ -98,6 +99,12 @@
             background: linear-gradient(90deg, #1DFF96 0%, #BCFF7B 100%);
             margin-right: 20px;
         }
+        &.v8{
+            color: #FFF;
+            background: linear-gradient(90deg, #3C38FF 0%, #7838FF 100%);
+            backdrop-filter: blur(10px);
+            margin-right: 20px;
+        }
         &.v9{
             margin-right: 20px;
         }
@@ -156,10 +163,18 @@
 }
 
 .menu-btn {
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(7.5px);
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &.v7{
         border: 1px solid rgba(255, 255, 255, 0.10);
         background: rgba(255, 255, 255, 0.10);
-        height: 50px;
-        width: 50px;
+        backdrop-filter: none;
     }
 }
