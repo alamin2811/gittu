@@ -266,3 +266,111 @@
         margin-bottom: 0;
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .banner7-timer{
+        padding-top: 22px;
+    }
+    .banner7-token-detail {
+        ul{
+            li{
+                padding: 14px 0px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .banner7-inner{
+        flex-wrap: wrap;
+        .banner7-left,
+        .banner7-right{
+            width: 100%;
+            border: none;
+            padding-right: 0;
+        }
+    }
+    .banner7-right-top-content {
+        ul{
+            li{
+                a{
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    .banner7-token-detail{
+        padding-left: 0;
+    }
+    .banner7-left-top-content{
+        border-right: none;
+        padding-right: 0;
+    }
+    .v7-progress-section{
+        border: none;
+        padding: 0;
+    }
+    .banner7-timer{
+        padding-top: 0;
+        padding-left: 0;
+    }
+    .banner7-bottom-left-content{
+        padding-right: 0;
+    }
+    .banner7-bottom-right-content{
+        padding-left: 0;
+    }
+    .banner7-bottom{
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .banner7-header{
+        margin-bottom: 40px;
+    }
+    .banner7-left-top-content {
+        padding-bottom: 20px;
+        h1{
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+    }
+    
+}
+@media only screen and (max-width: 575px) {
+    .banner7-left-top-content {
+        text-align: center;
+        padding-bottom: 10px;
+        h1{
+            font-size: 48px;
+        }
+    }
+    .banner7-right-top-content {
+        ul{
+            li{
+                a{
+                    padding: 15px 0px;
+                }
+            }
+        }
+    }
+    .banner7-token-detail{
+        padding-top: 0;
+        ul{
+            li{
+                padding: 7px 0px;
+            }
+        }
+    }
+    .banner7-bottom-left-content{
+        gap: 20px;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .banner7-bottom-right-content{
+        text-align: center;
+        padding-top: 0;
+    }
+    
+}

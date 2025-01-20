@@ -517,20 +517,41 @@ img {
           backdrop-filter: none;
 }
 
+@keyframes smoothSlider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1200px);
+  }
+}
 @media only screen and (max-width: 768px) {
-  .token-content {
+  .token-content.v4, .token-content.v5 {
     position: relative;
     padding-top: 60px;
   }
-  .token-content.v4 .token-center {
+  .token-content.v4 .token-center, .token-content.v5 .token-center {
     position: absolute;
     width: 100%;
     top: 0;
   }
 }
 @media only screen and (max-width: 575px) {
+  .buy-btn {
+    margin-top: 10px !important;
+  }
   .token-content.v3 {
     margin-top: 20px;
+  }
+  .token-content.v6, .token-content.v7, .token-content.v8 {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .token-content.v6 .token-right, .token-content.v7 .token-right, .token-content.v8 .token-right {
+    width: 100%;
+  }
+  .token-content.v6 .token-right .buy-token-btn, .token-content.v7 .token-right .buy-token-btn, .token-content.v8 .token-right .buy-token-btn {
+    width: 100%;
   }
   .gittu-input {
     margin-bottom: 20px;
@@ -28707,6 +28728,7 @@ CSS table of content
   background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: none;
           backdrop-filter: none;
+  border-radius: 0;
 }
 
 .mobile-menu {
@@ -29627,6 +29649,7 @@ CSS table of content
 @media only screen and (max-width: 575px) {
   .banner4-content h1 {
     font-size: 40px;
+    text-shadow: 2px 3px 0px #FCD930;
   }
   .timer-v4 li {
     font-size: 30px;
@@ -29641,8 +29664,9 @@ CSS table of content
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 100vh;
-  padding-top: 8%;
-  padding-bottom: 3%;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  overflow-x: hidden;
 }
 
 .banner5-content {
@@ -29657,7 +29681,8 @@ CSS table of content
   font-size: 90px;
   font-style: normal;
   font-weight: 400;
-  line-height: 90px; /* 100% */
+  line-height: 90px;
+  /* 100% */
 }
 .banner5-content p {
   font-size: 18px;
@@ -29789,6 +29814,7 @@ CSS table of content
   margin: 0;
   list-style: none;
   padding: 0;
+  animation: smoothSlider 25s infinite linear;
 }
 .banner-bottom-scrollar-inner ul li {
   color: #111;
@@ -29805,14 +29831,67 @@ CSS table of content
   min-width: max-content;
 }
 
+@media only screen and (max-width: 991px) {
+  .banner5-content h1 {
+    font-size: 70px;
+  }
+  .banner-bottom-scrollar {
+    transform: rotate(-10deg) !important;
+  }
+  .banner-bottom-scrollar-inner {
+    gap: 20px;
+  }
+  .banner-bottom-scrollar-inner ul {
+    gap: 20px;
+  }
+  .banner-bottom-scrollar-inner ul li {
+    font-size: 40px !important;
+    gap: 20px;
+  }
+  .banner-bottom-scrollar-inner ul li img {
+    max-width: 24px;
+  }
+  .banner-bottom-shape.v5 {
+    height: 55px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner5-section {
+    padding-top: 135px;
+  }
+  .banner5-content h1 {
+    font-size: 60px;
+    line-height: 120%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .banner5-section {
+    padding-top: 120px;
+  }
+  .banner5-content h1 {
+    font-size: 40px;
+  }
+  .timer-v5 li {
+    font-size: 36px;
+  }
+  .timer-v5 li span {
+    font-size: 36px;
+  }
+  .card-progress-section.v5 h5 {
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 .banner6-section {
   background: url(../images/bg/bg-v6.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 100vh;
-  padding-top: 9%;
-  padding-bottom: 3%;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  overflow-x: hidden;
 }
 
 .banner6-content {
@@ -29844,6 +29923,32 @@ CSS table of content
   position: relative;
   max-width: 570px;
   margin: auto;
+}
+.banner6-card-section::after {
+  content: "";
+  position: absolute;
+  right: -22%;
+  bottom: 10%;
+  transform: rotate(210deg);
+  height: 65%;
+  width: 45%;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(82, 79, 31, 0) 0%, #1D200F 100%);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+.banner6-card-section::before {
+  content: "";
+  position: absolute;
+  left: -22%;
+  bottom: 10%;
+  transform: rotate(-30deg);
+  height: 65%;
+  width: 45%;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #052117 0%, rgba(32, 93, 55, 0) 100%);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 
 .banner6-card {
@@ -30015,6 +30120,40 @@ CSS table of content
   transform: rotate(8deg);
 }
 
+@media only screen and (max-width: 768px) {
+  .banner6-card-section {
+    max-width: 460px;
+  }
+  .banner6-content h1 {
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .banner6-section {
+    padding-top: 130px;
+  }
+  .v6-timer {
+    margin: 0px -25px;
+  }
+  .timer-v6 li {
+    font-size: 30px;
+  }
+  .timer-v6 li span {
+    font-size: 30px;
+  }
+  .card-progress-section.v6 h5 {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+  .banner6-card {
+    padding: 20px 25px;
+  }
+  .banner6-content h1 {
+    font-size: 48px;
+  }
+}
 .banner7-section {
   background: url(../images/bg/bg-7.jpg);
   background-size: cover;
@@ -30275,13 +30414,98 @@ CSS table of content
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  .banner7-timer {
+    padding-top: 22px;
+  }
+  .banner7-token-detail ul li {
+    padding: 14px 0px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .banner7-inner {
+    flex-wrap: wrap;
+  }
+  .banner7-inner .banner7-left,
+  .banner7-inner .banner7-right {
+    width: 100%;
+    border: none;
+    padding-right: 0;
+  }
+  .banner7-right-top-content ul li a {
+    padding-left: 0;
+  }
+  .banner7-token-detail {
+    padding-left: 0;
+  }
+  .banner7-left-top-content {
+    border-right: none;
+    padding-right: 0;
+  }
+  .v7-progress-section {
+    border: none;
+    padding: 0;
+  }
+  .banner7-timer {
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .banner7-bottom-left-content {
+    padding-right: 0;
+  }
+  .banner7-bottom-right-content {
+    padding-left: 0;
+  }
+  .banner7-bottom {
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner7-header {
+    margin-bottom: 40px;
+  }
+  .banner7-left-top-content {
+    padding-bottom: 20px;
+  }
+  .banner7-left-top-content h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .banner7-left-top-content {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .banner7-left-top-content h1 {
+    font-size: 48px;
+  }
+  .banner7-right-top-content ul li a {
+    padding: 15px 0px;
+  }
+  .banner7-token-detail {
+    padding-top: 0;
+  }
+  .banner7-token-detail ul li {
+    padding: 7px 0px;
+  }
+  .banner7-bottom-left-content {
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .banner7-bottom-right-content {
+    text-align: center;
+    padding-top: 0;
+  }
+}
 .banner8-section {
   background: url(../images/bg/bg-v8.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 100vh;
-  padding-top: 11%;
+  padding-top: 185px;
 }
 
 .banner8-left .banner-tag {
@@ -30572,6 +30796,77 @@ CSS table of content
   width: 100%;
 }
 
+@media only screen and (max-width: 991px) {
+  .banner8-section {
+    padding-top: 150px;
+  }
+  .banner8-progress-card {
+    margin: auto;
+  }
+  .banner8-left {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .banner8-left .banner-tag {
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  .banner8-left h1 {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .banner8-left p {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .banner8-left .whitepaper-btn {
+    margin: auto;
+  }
+  .v8-timer {
+    margin-top: 5px;
+  }
+  .presale-stage-content {
+    flex-wrap: wrap;
+  }
+  .presale-stage-content .presale-stage-left {
+    width: 100%;
+  }
+  .presale-stage-content .presale-stage-left::after {
+    display: none;
+  }
+  .presale-stage-right {
+    width: 100%;
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner8-left h1 {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .banner8-left h1 {
+    font-size: 48px;
+  }
+  .banner8-left .banner-tag {
+    font-size: 15px;
+  }
+  .v8-timer {
+    padding: 10px 25px;
+  }
+  .timer-v8 li {
+    font-size: 32px;
+  }
+  .timer-v8 li span {
+    font-size: 32px;
+  }
+  .banner8-token-detail ul li {
+    padding: 10px 25px;
+  }
+  .presale-stage-right {
+    padding: 10px 25px 25px 25px;
+  }
+}
 .banner9-section {
   background: #0E1117;
   min-height: 100vh;
@@ -30695,10 +30990,25 @@ CSS table of content
   font-size: 40px;
   line-height: 150%;
   color: #FFFFFF;
+  position: relative;
 }
 .banner1-timer ul li span {
   font-size: 24px;
   line-height: 60px;
+}
+.banner1-timer ul li::after {
+  content: ":";
+  position: absolute;
+  right: -40px;
+  bottom: 7px;
+  color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.4);
+}
+.banner1-timer ul li:nth-last-child(1)::after {
+  display: none;
 }
 
 .card-progress-section {
@@ -30861,6 +31171,7 @@ CSS table of content
   align-items: center;
   justify-content: space-between;
   padding: 26px;
+  animation: smoothSlider 25s infinite linear;
 }
 .banner9-footer ul li {
   margin-right: 120px;
