@@ -4,8 +4,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 100vh;
-    padding-top: 8%;
-    padding-bottom: 3%;
+    padding-top: 150px;
+    padding-bottom: 50px;
 }
 .banner4-content{
     max-width: 770px;
@@ -186,4 +186,39 @@
             }
         }
     }
+}
+
+@media only screen and (max-width: 991px) {
+    .banner4-content {
+        h1{
+            font-size: 70px;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .banner4-content {
+        h1{
+            font-size: 60px;
+        }
+    }
+    .banner4-statistics{
+        margin-top: 0;
+    }
+
+}
+@media only screen and (max-width: 575px) {
+    .banner4-content {
+        h1{
+            font-size: 40px;
+        }
+    }
+    .timer-v4 {
+        li{
+           font-size: 30px;
+        } 
+    }
+    .banner4-statistics{
+        margin-top: 0;
+    }
+
 }

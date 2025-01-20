@@ -45,7 +45,7 @@
             margin-bottom: 23px;
         }
     }
-    .banner9-three-timer{
+    .banner1-three-timer{
         max-width: 400px;
         ul{
             li{
@@ -109,6 +109,25 @@
 }
 
 @include breakpointMaxWidth(768px){
+    .progress-section {
+        &.v1{
+            .progress-top-text{
+                gap: 15px;
+                row-gap: 0;
+            }
+        }
+    }
+    .banner1-three-timer {
+        max-width: 300px;
+        ul{
+            li{
+                &::after{
+                    right: -20px;
+                    bottom: 4px;
+                }
+            }
+        }
+    }
     .banner9-right{
         padding: 40px;
         margin-top: 60px;
@@ -183,6 +202,14 @@
 
 
 @include breakpointMaxWidth(575px){
+    .progress-section {
+        &.v1{
+            .progress-top-text{
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+    }
     .banner9-right{
         padding: 10px;
     }
@@ -210,7 +237,7 @@
     }
 
 
-    .banner9-three-timer {
+    .banner1-three-timer {
         ul{
             li{
                 font-size: 24px;

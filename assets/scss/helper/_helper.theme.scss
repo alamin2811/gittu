@@ -208,3 +208,28 @@
         }
     }
 }
+
+
+@media only screen and (max-width: 768px) {
+    .token-content {
+        position: relative;
+        padding-top: 60px;
+        &.v4{
+            .token-center{
+                position: absolute;
+                width: 100%;
+                top: 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 575px) {
+    .token-content{
+        &.v3{
+            margin-top: 20px;
+        }
+    }
+    .gittu-input{
+        margin-bottom: 20px;
+    }
+}

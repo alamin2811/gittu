@@ -26,6 +26,7 @@
     align-items: center;
     justify-content: flex-end;
     width: 40%;
+    &.v2,
     &.v3,
     &.v4,
     &.v6,
@@ -77,36 +78,32 @@
         line-height: 26px;
         font-weight: 700;
         text-transform: uppercase;
+        margin-right: 20px;
         &.v3{
             color: #111;
             background: #07E6F5;
-            margin-right: 20px;
         }
         &.v4{
             color: #111;
             background: #FCD930;
-            margin-right: 20px;
         }
         &.v5{
             color: #111;
             border-radius: 25px;
             background: linear-gradient(90deg, #1DFF96 0%, #BCFF7B 100%);
-            margin-right: 20px;
         }
         &.v6{
             color: #111;
             border-radius: 25px;
             background: linear-gradient(90deg, #1DFF96 0%, #BCFF7B 100%);
-            margin-right: 20px;
         }
         &.v8{
             color: #FFF;
             background: linear-gradient(90deg, #3C38FF 0%, #7838FF 100%);
             backdrop-filter: blur(10px);
-            margin-right: 20px;
         }
         &.v9{
-            margin-right: 20px;
+
         }
     }
     

@@ -517,6 +517,25 @@ img {
           backdrop-filter: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .token-content {
+    position: relative;
+    padding-top: 60px;
+  }
+  .token-content.v4 .token-center {
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .token-content.v3 {
+    margin-top: 20px;
+  }
+  .gittu-input {
+    margin-bottom: 20px;
+  }
+}
 /*------------------------------------------------------------------------------------
 Theme Name: Exon
 Theme URL: #
@@ -28544,10 +28563,10 @@ CSS table of content
   justify-content: flex-end;
   width: 40%;
 }
-.header-right.v3, .header-right.v4, .header-right.v6, .header-right.v8, .header-right.v9 {
+.header-right.v2, .header-right.v3, .header-right.v4, .header-right.v6, .header-right.v8, .header-right.v9 {
   width: 70%;
 }
-.header-right.v3 ul, .header-right.v4 ul, .header-right.v6 ul, .header-right.v8 ul, .header-right.v9 ul {
+.header-right.v2 ul, .header-right.v3 ul, .header-right.v4 ul, .header-right.v6 ul, .header-right.v8 ul, .header-right.v9 ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28559,10 +28578,10 @@ CSS table of content
   margin-bottom: 0px;
   margin-right: 20px;
 }
-.header-right.v3 ul li, .header-right.v4 ul li, .header-right.v6 ul li, .header-right.v8 ul li, .header-right.v9 ul li {
+.header-right.v2 ul li, .header-right.v3 ul li, .header-right.v4 ul li, .header-right.v6 ul li, .header-right.v8 ul li, .header-right.v9 ul li {
   margin-right: 20px;
 }
-.header-right.v3 ul li a, .header-right.v4 ul li a, .header-right.v6 ul li a, .header-right.v8 ul li a, .header-right.v9 ul li a {
+.header-right.v2 ul li a, .header-right.v3 ul li a, .header-right.v4 ul li a, .header-right.v6 ul li a, .header-right.v8 ul li a, .header-right.v9 ul li a {
   background: rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -28573,7 +28592,7 @@ CSS table of content
   align-items: center;
   justify-content: center;
 }
-.header-right.v3 ul li:nth-last-child(1), .header-right.v4 ul li:nth-last-child(1), .header-right.v6 ul li:nth-last-child(1), .header-right.v8 ul li:nth-last-child(1), .header-right.v9 ul li:nth-last-child(1) {
+.header-right.v2 ul li:nth-last-child(1), .header-right.v3 ul li:nth-last-child(1), .header-right.v4 ul li:nth-last-child(1), .header-right.v6 ul li:nth-last-child(1), .header-right.v8 ul li:nth-last-child(1), .header-right.v9 ul li:nth-last-child(1) {
   margin-right: 0px;
 }
 .header-right .header-link {
@@ -28594,40 +28613,32 @@ CSS table of content
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-right: 20px;
 }
 .header-right button.v3 {
   color: #111;
   background: #07E6F5;
-  margin-right: 20px;
 }
 .header-right button.v4 {
   color: #111;
   background: #FCD930;
-  margin-right: 20px;
 }
 .header-right button.v5 {
   color: #111;
   border-radius: 25px;
   background: linear-gradient(90deg, #1DFF96 0%, #BCFF7B 100%);
-  margin-right: 20px;
 }
 .header-right button.v6 {
   color: #111;
   border-radius: 25px;
   background: linear-gradient(90deg, #1DFF96 0%, #BCFF7B 100%);
-  margin-right: 20px;
 }
 .header-right button.v8 {
   color: #FFF;
   background: linear-gradient(90deg, #3C38FF 0%, #7838FF 100%);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  margin-right: 20px;
 }
-.header-right button.v9 {
-  margin-right: 20px;
-}
-
 .header-center {
   width: 20%;
   margin: auto;
@@ -28779,7 +28790,7 @@ CSS table of content
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   z-index: 11;
   padding-top: 8%;
@@ -28836,13 +28847,13 @@ CSS table of content
   z-index: 4;
 }
 
-.banner9-three-timer {
-  max-width: 520px;
+.banner1-three-timer {
+  max-width: 500px;
   margin: auto;
   margin-top: 2%;
   margin-bottom: 2%;
 }
-.banner9-three-timer ul {
+.banner1-three-timer ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -28850,15 +28861,30 @@ CSS table of content
   align-items: center;
   justify-content: space-between;
 }
-.banner9-three-timer ul li {
+.banner1-three-timer ul li {
   font-weight: 900;
   font-size: 40px;
   line-height: 125%;
   text-align: center;
   color: #FFFFFF;
+  position: relative;
 }
-.banner9-three-timer ul li span {
+.banner1-three-timer ul li span {
   font-size: 18px;
+}
+.banner1-three-timer ul li::after {
+  content: ":";
+  position: absolute;
+  right: -35px;
+  bottom: 8px;
+  color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.4);
+}
+.banner1-three-timer ul li:nth-last-child(1)::after {
+  display: none;
 }
 
 .progress-section {
@@ -28905,7 +28931,7 @@ CSS table of content
 }
 
 .banner1-social {
-  position: absolute;
+  position: relative;
   bottom: 0px;
   left: 0px;
   width: 100%;
@@ -29117,6 +29143,86 @@ CSS table of content
   margin-top: 5%;
 }
 
+@media only screen and (max-width: 1500px) {
+  .banner2-left {
+    padding-top: 100px;
+    max-width: 600px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .banner2-left {
+    padding-top: 100px;
+    max-width: 500px;
+  }
+  .banner2-text h1 {
+    font-size: 45px;
+  }
+  .banner2-right .banner2-right-bottom .timer-content {
+    max-width: 390px;
+  }
+  .banner2-right .banner2-right-bottom .timer-content ul li {
+    font-size: 35px;
+  }
+  .banner2-right .banner2-right-bottom .timer-content ul li::after {
+    right: -18px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .banner2-inner {
+    min-height: auto;
+  }
+  .banner2-left {
+    padding-top: 140px;
+    padding-bottom: 70px;
+    margin: auto;
+    text-align: center;
+    min-height: auto;
+  }
+  .banner2-right {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+  }
+  .banner2-right .banner2-right-bottom .banner2-right-bottom-content {
+    text-align: center;
+    max-width: 400px;
+  }
+  .banner2-right .banner2-right-bottom .timer-content {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner2-left {
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .banner2-text h1 {
+    font-size: 36px;
+    line-height: 165%;
+  }
+  .banner2-right .banner2-right-bottom {
+    padding: 50px 20px;
+  }
+  .banner2-right .banner2-right-bottom .timer-content {
+    max-width: 300px;
+  }
+  .banner2-right .banner2-right-bottom .timer-content ul li {
+    font-size: 25px;
+  }
+  .banner2-right .banner2-right-bottom .timer-content ul li::after {
+    right: -16px;
+  }
+  .banner2-right .banner2-right-bottom .v2-social ul li a {
+    height: 40px;
+    width: 40px;
+  }
+  .progress-section-v2 .progress-top-text {
+    flex-direction: column;
+  }
+}
 .banner3-section {
   background: url(../images/bg/v3-bg.jpg);
   background-size: cover;
@@ -29132,8 +29238,8 @@ CSS table of content
 .banner3-section .overlay .overlay2 {
   background: linear-gradient(180deg, rgba(11, 12, 18, 0.09) 0%, rgba(11, 12, 18, 0.9) 100%);
   min-height: 100vh;
-  padding-top: 7%;
-  padding-bottom: 3%;
+  padding-top: 150px;
+  padding-bottom: 50px;
 }
 
 .banner3-content {
@@ -29305,14 +29411,33 @@ CSS table of content
   gap: 9px;
 }
 
+@media only screen and (max-width: 768px) {
+  .banner3-section .overlay .overlay2 {
+    padding-top: 130px;
+  }
+  .banner3-content h1 {
+    font-size: 50px;
+  }
+  .timer-v3 li {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .banner3-content h1 {
+    font-size: 40px;
+  }
+  .card-progress-section.v3 h5 {
+    flex-direction: column;
+  }
+}
 .banner4-section {
   background: url(../images/bg/bg-v4.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 100vh;
-  padding-top: 8%;
-  padding-bottom: 3%;
+  padding-top: 150px;
+  padding-bottom: 50px;
 }
 
 .banner4-content {
@@ -29486,6 +29611,30 @@ CSS table of content
   gap: 9px;
 }
 
+@media only screen and (max-width: 991px) {
+  .banner4-content h1 {
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner4-content h1 {
+    font-size: 60px;
+  }
+  .banner4-statistics {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .banner4-content h1 {
+    font-size: 40px;
+  }
+  .timer-v4 li {
+    font-size: 30px;
+  }
+  .banner4-statistics {
+    margin-top: 0;
+  }
+}
 .banner5-section {
   background: url(../images/bg/bg-5.webp);
   background-size: cover;

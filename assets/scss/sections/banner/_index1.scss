@@ -6,7 +6,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        height: 100vh;
+        min-height: 100vh;
         position: relative;
         z-index: 11;
         padding-top: 8%;
@@ -66,8 +66,8 @@
     }
 }
 
-.banner9-three-timer{
-    max-width: 520px;
+.banner1-three-timer{
+    max-width: 500px;
     margin: auto;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -84,8 +84,25 @@
             line-height: 125%;
             text-align: center;
             color: #FFFFFF;
+            position: relative;
             span{
                 font-size: 18px;
+            }
+            &::after{
+                content: ':';
+                position: absolute;
+                right: -35px;
+                bottom: 8px;
+                color: rgba(255, 255, 255, 0.40);
+                background: rgba(255, 255, 255, 0.40);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: rgba(255, 255, 255, 0.40);
+            }
+            &:nth-last-child(1){
+                &::after{
+                    display: none;
+                }
             }
         }
     }
@@ -135,7 +152,7 @@
 }
 
 .banner1-social{
-    position: absolute;
+    position: relative;
     bottom: 0px;
     left: 0px;
     width: 100%;
