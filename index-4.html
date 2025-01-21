@@ -23,8 +23,7 @@
     <link rel="stylesheet" href="./assets/css/niceCountryInput.css">
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- responsive css -->
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+     
 </head>
 
 <body>
@@ -35,35 +34,61 @@
                 <a href="./index.html" class="logo"><img src="./assets/images/logo/logo.svg" alt="logo"></a>
                 <div class="header-right v4">
                     <ul>
-                        <li><a href="#"><img src="./assets/images/icon/telegram.svg" alt="icon"></a></li>
-                        <li><a href="#"><img src="./assets/images/icon/discord.svg" alt="icon"></a></li>
-                        <li><a href="#"><img src="./assets/images/icon/twitter.svg" alt="icon"></a></li>
+                        <li><a href="https://telegram.org/" target="_blank"><img src="./assets/images/icon/telegram.svg" alt="icon"></a></li>
+                        <li><a href="https://discord.com/" target="_blank"><img src="./assets/images/icon/discord.svg" alt="icon"></a></li>
+                        <li><a href="https://x.com/" target="_blank"><img src="./assets/images/icon/twitter.svg" alt="icon"></a></li>
                     </ul>
-                    <button class="v4" type="button" data-bs-toggle="modal" data-bs-target="#connectModal">Connect
-                        Wallet</button>
-                    <a href="#" class="menu-btn"><img src="./assets/images/icon/menu.svg" alt="icon"></a>
+                    <button class="v4" type="button" data-bs-toggle="modal" data-bs-target="#connectModal">Connect <span>Wallet</span></button>
+                        <div class="menu-btn v4">
+                            <img src="./assets/images/icon/menu.svg" alt="icon">
+                            <div class="demo-list-menu">
+                                <ol>
+                                <li><a href="./index.html">Demo One</a></li>
+                                <li><a href="./index-2.html">Demo Two</a></li>
+                                <li><a href="./index-3.html">Demo Three</a></li>
+                                <li><a href="./index-4.html">Demo Four</a></li>
+                                <li><a href="./index-5.html">Demo Five</a></li>
+                                <li><a href="./index-6.html">Demo Six</a></li>
+                                <li><a href="./index-7.html">Demo Seven</a></li>
+                                <li><a href="./index-8.html">Demo Eight</a></li>
+                                <li><a href="./index-9.html">Demo Nine</a></li>
+                                <li><a href="./index-10.html">Demo Ten</a></li>
+                            </ol>
+                            </div>
+                        </div>
                 </div>
+                <!-- mobile-menu -->
                 <div class="mobile-menu">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
                         fdprocessedid="7fbgmc">
-                        <span class="iconify" data-icon="fa6-solid:bars"></span>
+                        <img src="./assets/images/icon/menu.svg" alt="icon">
                     </button>
                     <div class="offcanvas offcanvas-end mobile-menu-body" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
-                            <a href="./index.html" class="logo"><img src="./assets/images/logo/logo.svg"
-                                    alt="logo"></a>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><span
-                                    class="iconify" data-icon="material-symbols:close-rounded"></span></button>
+                            <a href="./index.html" class="logo"><img src="./assets/images/logo/logo.svg" alt="logo"></a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><img src="./assets/images/icon/cross.svg" alt="icon"></button>
                         </div>
-                        <div class="offcanvas-body">
+                        <div class="offcanvas-body mobile-menu-content">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <button class="connect-btn" type="button" data-bs-toggle="modal"
-                                        data-bs-target="#connectModal">Connect Wallet</button>
-                                </li>
+                                <li><a href="./index.html">Demo One</a></li>
+                                <li><a href="./index-2.html">Demo Two</a></li>
+                                <li><a href="./index-3.html">Demo Three</a></li>
+                                <li><a href="./index-4.html">Demo Four</a></li>
+                                <li><a href="./index-5.html">Demo Five</a></li>
+                                <li><a href="./index-6.html">Demo Six</a></li>
+                                <li><a href="./index-7.html">Demo Seven</a></li>
+                                <li><a href="./index-8.html">Demo Eight</a></li>
+                                <li><a href="./index-9.html">Demo Nine</a></li>
+                                <li><a href="./index-10.html">Demo Ten</a></li>
                             </ul>
+                            <ol>
+                                <li><a href="https://telegram.org/" target="_blank"><img src="./assets/images/icon/telegram.svg" alt=""></a></li>
+                                <li><a href="https://discord.com/" target="_blank"><img src="./assets/images/icon/discord.svg" alt=""></a></li>
+                                <li><a href="https://x.com/" target="_blank"><img src="./assets/images/icon/twitter.svg" alt=""></a></li>
+                            </ol>
+                            <a class="whitepaper-btn-mobile" target="_blank" aria-current="page" href="https://gittu-react-landing.vercel.app/assets/whitepaper-BtQddnnY.pdf">Whitepaper</a>
                         </div>
                     </div>
                 </div>
@@ -141,29 +166,21 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5 orbitron" id="connectModalLabel">Connect Wallet</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span
-                                class="iconify" data-icon="material-symbols:close-rounded"></span></button>
+                        <h1 class="modal-title fs-5 orbitron text-center" id="connectModalLabel">Connect Wallet</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="./assets/images/icon/cross.svg" alt="icon">
+                        </button>
                     </div>
                     <div class="modal-body">
-                        <p>Choose how you want to connect. There are several wallet providers.</p>
+                        <p class="text-center">Choose how you want to connect. There are several wallet providers.</p>
                         <ul class="wallet-list">
-                            <li class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a href="#"><img
-                                        src="./assets/images/wallet/metamask.svg" alt="metamask"><span
-                                        class="wt-700 kanit">MetaMask</span></a></li>
-                            <li class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a href="#"><img
-                                        src="./assets/images/wallet/formatic.png" alt="formatic"><span
-                                        class="wt-700 kanit">Formatic</span></a></li>
-                            <li class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a href="#"><img
-                                        src="./assets/images/wallet/trust-wallet.svg" alt="trust-wallet"><span
-                                        class="wt-700 kanit">Trust Wallet</span></a></li>
-                            <li class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a href="#"><img
-                                        src="./assets/images/wallet/wallet-connect.svg" alt="wallet-connect"><span
-                                        class="wt-700 kanit">WalletConnect</span></a></li>
-                            <li class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a href="#"><img
-                                        src="./assets/images/wallet/phantom.png" alt="phantom"><span
-                                        class="wt-700 kanit">Phantom</span></a></li>
+                            <li class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a href="#"><img src="./assets/images/wallet/metamask.svg" alt="metamask"><span class="wt-700 kanit">MetaMask</span></a></li>
+                            <li class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a href="#"><img src="./assets/images/wallet/formatic.png" alt="formatic"><span class="wt-700 kanit">Formatic</span></a></li>
+                            <li class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a href="#"><img src="./assets/images/wallet/trust-wallet.svg" alt="trust-wallet"><span class="wt-700 kanit">Trust Wallet</span></a></li>
+                            <li class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a href="#"><img src="./assets/images/wallet/wallet-connect.svg" alt="wallet-connect"><span class="wt-700 kanit">WalletConnect</span></a></li>
+                            <li class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a href="#"><img src="./assets/images/wallet/phantom.png" alt="phantom"><span class="wt-700 kanit">Phantom</span></a></li>
                         </ul>
+                        <p class="text-center">By connecting your wallet, you agree to our <a href="#">Terms of Service</a> and our <a href="#">Privacy Policy</a>.</p>
                     </div>
                 </div>
             </div>

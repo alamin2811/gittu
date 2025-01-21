@@ -1,7 +1,8 @@
-.banner1-section{
+.banner1-section {
     background: #0B0C12;
     position: relative;
-    .overlay{
+
+    .overlay {
         background: url(../images/bg/grain-texture.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -11,24 +12,26 @@
         z-index: 11;
         padding-top: 8%;
     }
- .top-shape{
-    width: 100%;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    text-align: center;
-    z-index: 3;
- }   
+
+    .top-shape {
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        text-align: center;
+        z-index: 3;
+    }
 }
 
-.bottom-shape{
+.bottom-shape {
     width: 100%;
     bottom: 0px;
     left: 0px;
     position: absolute;
     text-align: center;
     z-index: 1;
-    &2{
+
+    &2 {
         width: 100%;
         bottom: 0px;
         left: 0px;
@@ -38,24 +41,27 @@
     }
 }
 
-.banner1-content{
+.banner1-content {
     h5 {
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 167%;
-            text-align: center;
-            color: #FFFFFF;
-        }
-    h1{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 167%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    h1 {
         max-width: 978px;
         margin: auto;
         margin-bottom: 23px;
     }
-    .price-text{
+
+    .price-text {
         text-align: center;
         margin-bottom: 31px;
     }
-    .banner1-btn{
+
+    .banner1-btn {
         max-width: 270px;
         width: 100%;
         height: 60px;
@@ -66,29 +72,33 @@
     }
 }
 
-.banner1-three-timer{
+.banner1-timer {
     max-width: 500px;
     margin: auto;
     margin-top: 2%;
     margin-bottom: 2%;
-    ul{
+
+    ul {
         list-style: none;
         padding: 0px;
         margin: 0px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        li{
+
+        li {
             font-weight: 900;
             font-size: 40px;
             line-height: 125%;
             text-align: center;
             color: #FFFFFF;
             position: relative;
-            span{
+
+            span {
                 font-size: 18px;
             }
-            &::after{
+
+            &::after {
                 content: ':';
                 position: absolute;
                 right: -35px;
@@ -99,8 +109,9 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: rgba(255, 255, 255, 0.40);
             }
-            &:nth-last-child(1){
-                &::after{
+
+            &:nth-last-child(1) {
+                &::after {
                     display: none;
                 }
             }
@@ -108,17 +119,19 @@
     }
 }
 
-.progress-section{
+.progress-section {
     max-width: 770px;
     width: 100%;
     margin: auto;
     margin-bottom: 1.5%;
     margin-top: 2%;
-    .progress-top-text{
+
+    .progress-top-text {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        p{
+
+        p {
             margin-bottom: 11px;
             font-weight: 600;
             font-size: 15px;
@@ -127,12 +140,14 @@
             color: #FFFFFF;
         }
     }
-    .progress-bar-container{
+
+    .progress-bar-container {
         background: rgba(255, 255, 255, 0.05);
         border: 1px dashed rgba(255, 255, 255, 0.2);
         border-radius: 20px;
         padding: 8px;
-        .progress-bar-inner{
+
+        .progress-bar-inner {
             background: #4250F4;
             border-radius: 12px;
             padding: 4px 6px;
@@ -140,7 +155,8 @@
             align-items: center;
             justify-content: flex-end;
             width: 23%;
-            span{
+
+            span {
                 font-weight: 700;
                 font-size: 12px;
                 line-height: 125%;
@@ -151,7 +167,7 @@
     }
 }
 
-.banner1-social{
+.banner1-social {
     position: relative;
     bottom: 0px;
     left: 0px;
@@ -160,7 +176,8 @@
     padding-top: 4%;
     padding-bottom: 2%;
     z-index: 3;
-    ul{
+
+    ul {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -168,6 +185,7 @@
         list-style: none;
         max-width: 520px;
         margin: auto;
+
         li {
             background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(10px);
@@ -181,3 +199,173 @@
     }
 }
 
+.input-section {
+    .input-dwopdown {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.10);
+        background: rgba(255, 255, 255, 0.05);
+        padding: 0;
+        height: 60px;
+        margin-bottom: 30px;
+
+        input {
+            border: none;
+            outline: none;
+            width: 65%;
+            background: transparent;
+            margin-bottom: 0;
+        }
+
+        .token-dropdown {
+            width: 160px;
+            border: none;
+            outline: none;
+            position: relative;
+            border-left: 2px solid rgba(255, 255, 255, 0.10);
+            border-radius: 0px 10px 10px 0px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1199px) {
+
+    .banner1-content {
+        h1 {
+            font-size: 55px;
+            max-width: 660px;
+            margin: auto;
+            margin-bottom: 23px;
+        }
+    }
+
+    .banner1-timer {
+        max-width: 400px;
+
+        ul {
+            li {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .banner1-section {
+        .overlay {
+            padding-top: 12%;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .banner1-section {
+        .overlay {
+            padding-top: 16%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .progress-section {
+        &.v1 {
+            .progress-top-text {
+                gap: 15px;
+                row-gap: 0;
+            }
+        }
+    }
+
+    .banner1-timer {
+        max-width: 300px;
+
+        ul {
+            li {
+                &::after {
+                    right: -20px;
+                    bottom: 4px;
+                }
+            }
+        }
+    }
+
+    .banner1-section {
+        .overlay {
+            padding-top: 150px;
+            min-height: auto;
+        }
+    }
+
+    .banner1-social {
+        bottom: 20px;
+    }
+
+    .banner1-content {
+        h1 {
+            font-size: 40px;
+            line-height: 150%;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+    .banner1-timer {
+        ul {
+            li {
+                font-size: 30px;
+            }
+        }
+    }
+
+
+    .banner1-timer {
+        ul {
+            li {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .banner1-content {
+        h1 {
+            font-size: 36px;
+        }
+
+        h5 {
+            margin-bottom: 20px;
+        }
+
+        .price-text {
+            margin-top: 20px;
+        }
+    }
+
+    .progress-section {
+        .progress-top-text {
+            flex-wrap: wrap;
+        }
+    }
+
+    .banner1-social {
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+
+    .banner1-section {
+        .overlay {
+            height: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .banner1-social ul li {
+        height: 36px;
+        padding: 10px;
+        width: 36px;
+    }
+
+}

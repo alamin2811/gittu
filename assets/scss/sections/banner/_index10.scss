@@ -167,3 +167,60 @@
         color: #FFFFFF;
     }
 }
+
+@media only screen and (max-width: 1199px) {
+    .main-content-right{
+        padding: 30px 20px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .banner10-content {
+        h1{
+            font-size: 55px;
+        }
+    }
+    .main-content {
+        flex-direction: column;
+
+        &-left {
+            width: 100%;
+        }
+
+        &-right {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .banner10-content {
+        h1{
+            font-size: 40px;
+        }
+        h2{
+            max-width: 390px;
+        }
+    }
+}
+@media only screen and (max-width: 575px) {
+    .sale-ends-timer{
+        flex-wrap: wrap;
+    }
+    .main-content-right{
+        padding: 30px 20px;
+    }
+    .token-dropdown {
+        &.v10{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .main-content-info {
+        padding: 20px;
+    }
+
+    .main-content-right {
+        padding: 20px;
+    }
+}
